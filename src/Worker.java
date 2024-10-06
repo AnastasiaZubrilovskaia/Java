@@ -4,6 +4,7 @@ public class Worker {
     public Worker (String name){
         this.name = name;
     }
+
     public String toString (){
         if (department == null){
             return name + " has no work";

@@ -1,12 +1,22 @@
 public class Time {
-    public int seconds;
-    public int second;
-    public int minutes;
-    public int hours;
+    private int seconds;
     public Time(int seconds){
+        if (seconds < 0) throw new IllegalArgumentException(" seconds must be positive");
         this.seconds = seconds%(3600*24);
     }
+    public int getSeconds(){
+        return seconds;
+    }
+
+    public void setSeconds(int seconds) {
+        if (seconds < 0) throw new IllegalArgumentException(" seconds must be positive");
+        this.seconds = seconds;
+    }
+
     public String toString(){
+        int second;
+        int minutes;
+        int hours;
         String res = "";
         hours = seconds / 3600;
         if (hours/10 == 0) res = res + "0" + hours + ":";
