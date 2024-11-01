@@ -4,60 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acc16951-a236-40bf-b353-79bec4bd0740" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/src/Attribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BrokenLine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BrokenLineable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Checker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ClosedLine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Coordinate2D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cuckoo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DiapRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Fraction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gun.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/House.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Human.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lengthable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Line.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MainForFourthFifthSection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MainThree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main_six.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main_three.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Meowable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Name.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NameConstructor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parrot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pistol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Point1D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Point2D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Point3D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PointUniversal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Rule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shooter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sparrow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StringComp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StringComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Time.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Town.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Triangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Way.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Weapon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Weaponable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Worker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="acc16951-a236-40bf-b353-79bec4bd0740" name="Changes" comment="Work 02.11.24" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,11 +65,20 @@
       <option name="project" value="LOCAL" />
       <updated>1730490903712</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Work 02.11.24">
+      <option name="closed" value="true" />
+      <created>1730494241367</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730494241367</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="Work 02.11.24" />
+    <option name="LAST_COMMIT_MESSAGE" value="Work 02.11.24" />
   </component>
 </project>
