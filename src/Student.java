@@ -5,7 +5,7 @@ import java.util.List;
 public class Student {
     private String name;
     private List <Integer> marks = new ArrayList<>();
-    Checker rule;
+    public Checker rule;
     public Student(String name, Integer... marks){
         this (name, Arrays.asList(marks));
     }
@@ -15,6 +15,9 @@ public class Student {
 //        this.marks = marks;
         setName(name);
         setMark(marks);
+    }
+    public Student(String name){
+        setName(name);
     }
     public void setName(String name) {
         if (name == null || name.isBlank()) throw new IllegalArgumentException("Error");

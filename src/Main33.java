@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Main33 {
@@ -55,7 +57,29 @@ public class Main33 {
         System.out.println(C);
         System.out.println(D);
         System.out.println(E);
-
+        //
+        Student st1 = new Student("Alex");
+        st1.rule = new Rule();
+        List<Integer> marks1 = new ArrayList<>(List.of(2,3,4));
+        st1.setMark(marks1);
+        Student st2 = new Student("Ivan");
+        st2.rule = new Rule1();
+        List<Integer> marks2 = new ArrayList<>(List.of(2,3,4));
+        st2.setMark(marks2);
+        Student st3 = new Student("Petr");
+        st3.rule = new RangeRule(2,5);
+        List<Integer> marks3 = new ArrayList<>(List.of(2,3,4));
+        st3.setMark(marks3);
+        //
+        List<String> s = new ArrayList<>(List.of("123", "23", "querty"));
+        s.sort(new StringComparator());
+        System.out.println(s);
+        List<String> s1 = new ArrayList<>(List.of("123", "23", "1111"));
+        s1.sort(Comparator.naturalOrder());
+        System.out.println(s1);
+        List<String> s2 = new ArrayList<>(List.of("123", "23", "1111"));
+        Collections.sort(s2);
+        System.out.println(s2);
     }
     public static double sum(Number... numbers){
         double sum = 0.0;
