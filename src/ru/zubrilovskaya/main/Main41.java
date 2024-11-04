@@ -3,7 +3,7 @@ package ru.zubrilovskaya.main;
 import java.awt.Point;
 import java.math.BigInteger;
 
-import ru.zubrilovskaya.geometry.*;
+import ru.zubrilovskaya.geometry.Point2D;
 import ru.zubrilovskaya.numbers.Fraction;
 
 import static java.lang.Integer.parseInt;
@@ -25,7 +25,6 @@ public class Main41 {
         System.out.println(dot1);
         System.out.println(dot3);
 //        java.awt.Point dot2 = new java.awt.Point(12,22);
-//        System.out.println(dot2);
     }
     //4.1.4
     public static double power (String x, String y){
