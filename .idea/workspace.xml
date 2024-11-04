@@ -4,15 +4,66 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acc16951-a236-40bf-b353-79bec4bd0740" name="Changes" comment="Work 02.11">
-      <change afterPath="$PROJECT_DIR$/src/BankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BankOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MainTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Rule1.java" afterDir="false" />
+    <list default="true" id="acc16951-a236-40bf-b353-79bec4bd0740" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main41.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DiapRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RangeRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main33.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main33.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Attribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Attribute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/test/BankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BankOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/test/BankOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bird.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/birds/Bird.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BrokenLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/BrokenLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BrokenLineable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/BrokenLineable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/meow/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Checker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/student/Checker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/cities/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClosedLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/ClosedLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Coordinate2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Coordinate2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cuckoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/birds/Cuckoo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/work/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/numbers/Fraction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/weapons/Gun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/house/House.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/human/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lengthable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Lengthable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Line.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main14.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main16.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main16.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main32.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main32.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main33.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main33.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Meowable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/meow/Meowable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/human/Name.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NameConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/human/NameConstructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parrot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/birds/Parrot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/human/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pistol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/weapons/Pistol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Point1D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Point1D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Point2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Point2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Point3D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Point3D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PointUniversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/PointUniversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RangeRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/student/RangeRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/student/Rule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rule1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/student/Rule1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shooter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/weapons/Shooter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sparrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/birds/Sparrow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/stack/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringComp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/comparator/StringComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/student/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/time/Time.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Town.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/cities/Town.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Way.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/cities/Way.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/weapons/Weapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Weaponable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/weapons/Weaponable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/work/Worker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,13 +103,27 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main32.executor": "Run",
     "Application.Main33.executor": "Run",
+    "Application.Main3341.executor": "Run",
+    "Application.Main41.executor": "Run",
     "Application.MainTest.executor": "Run",
+    "Application.Unnamed.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.zubrilovskaya.main.Main41" />
+      <module name="Java" />
+      <option name="PROGRAM_PARAMETERS" value="3 3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -92,13 +157,22 @@
       <option name="project" value="LOCAL" />
       <updated>1730494350851</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changes">
+      <option name="closed" value="true" />
+      <created>1730578389456</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730578389456</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="Work 02.11.24" />
     <MESSAGE value="Work 02.11" />
-    <option name="LAST_COMMIT_MESSAGE" value="Work 02.11" />
+    <MESSAGE value="Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
   </component>
 </project>
