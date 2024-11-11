@@ -5,15 +5,16 @@ public class BankOperation {
     private BankOperation balance;
     public BankOperation(String name, int sum) {
         this.name = name;
-        setSum(sum);
-    }
-    public void setSum (int sum){
-        if (sum < 0) throw new IllegalArgumentException("sum must be positive");
         this.sum = sum;
+    }
+
+    public String getName(){
+        return name;
     }
     public int getSum(){
         return sum;
     }
+
     public String toString(){
         return name +": " + sum;
     }

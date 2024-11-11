@@ -13,6 +13,7 @@ public class MainTest {
         account.refill(400);
         account.refill(500);
         account.withdrawing(300);
+        account.refill(1000);
         System.out.println(account);
         //
         List<String> s = new ArrayList<>(List.of("123", "23", "querty"));
