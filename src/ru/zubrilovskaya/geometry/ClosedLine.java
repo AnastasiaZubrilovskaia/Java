@@ -3,10 +3,10 @@ import java.util.Arrays;
 import java.util.List;
 
 public class ClosedLine extends BrokenLine{
-    public ClosedLine(Point2D... points2D){
+    public ClosedLine(Point... points2D){
         this(Arrays.asList(points2D));
     }
-    public ClosedLine(List<Point2D> points2D){
+    public ClosedLine(List<Point> points2D){
         super(points2D);
     }
     @Override

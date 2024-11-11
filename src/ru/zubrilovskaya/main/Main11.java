@@ -1,13 +1,11 @@
 package ru.zubrilovskaya.main;
-import ru.zubrilovskaya.student.Student;
+import ru.zubrilovskaya.human.student.Student;
 import ru.zubrilovskaya.geometry.*;
 import ru.zubrilovskaya.stack.Stack;
 import ru.zubrilovskaya.human.*;
 import ru.zubrilovskaya.house.House;
 import ru.zubrilovskaya.time.Time;
-import ru.zubrilovskaya.work.*;
 import ru.zubrilovskaya.cities.*;
-import ru.zubrilovskaya.student.Student;
 
 public class Main11 {
     public static void main(String[] args) {
@@ -25,9 +23,9 @@ public class Main11 {
 //        System.out.println(worker);
         // number 1.1.1
         System.out.println("1.1.1:");
-        Point2D a = new Point2D(13,45);
-        Point2D b = new Point2D(45,60);
-        Point2D c = new Point2D(11,20);
+        Point a = new Point(13,45);
+        Point b = new Point(45,60);
+        Point c = new Point(11,20);
         System.out.println(a);
         System.out.println(b);
         System.out.println(c);
@@ -131,12 +129,12 @@ public class Main11 {
         System.out.println(student3);
         //1.3.2
         System.out.println("1.3.2:");
-        Point2D dot1 = new Point2D(1,5);
-        Point2D dot2 = new Point2D(2,8);
-        Point2D dot3 = new Point2D(5,3);
+        Point dot1 = new Point(1,5);
+        Point dot2 = new Point(2,8);
+        Point dot3 = new Point(5,3);
         BrokenLine brokenLine1 = new BrokenLine(dot1, dot2, dot3);
-        Point2D dot4 = new Point2D(2,-5);
-        Point2D dot5 = new Point2D(4,-8);
+        Point dot4 = new Point(2,-5);
+        Point dot5 = new Point(4,-8);
         BrokenLine brokenLine2 = new BrokenLine(dot1, dot4, dot5, dot3);
         System.out.println(brokenLine1);
         System.out.println(brokenLine2);

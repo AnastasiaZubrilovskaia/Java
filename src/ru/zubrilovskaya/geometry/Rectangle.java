@@ -1,7 +1,7 @@
 package ru.zubrilovskaya.geometry;
 public class Rectangle extends Square{
     private int side2;
-    public Rectangle(Point2D leftTop, int side1, int side2){
+    public Rectangle(Point leftTop, int side1, int side2){
         super(leftTop, side1);
         setSide2(side2);
     }
@@ -20,9 +20,9 @@ public class Rectangle extends Square{
     }
     @Override
     public BrokenLine getBroken(){
-        Point2D rightTop = new Point2D(leftTop.x + getSide(), leftTop.y);
-        Point2D rightBottom = new Point2D(leftTop.x + getSide(), leftTop.y - side2);
-        Point2D leftBottom = new Point2D(leftTop.x, leftTop.y-side2);
+        Point rightTop = new Point(leftTop.x + getSide(), leftTop.y);
+        Point rightBottom = new Point(leftTop.x + getSide(), leftTop.y - side2);
+        Point leftBottom = new Point(leftTop.x, leftTop.y-side2);
         return new BrokenLine(leftTop,rightTop, rightBottom, leftBottom);
     }
 }

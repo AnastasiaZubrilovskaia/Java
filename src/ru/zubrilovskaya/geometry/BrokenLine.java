@@ -4,17 +4,17 @@ import java.util.Arrays;
 import java.util.List;
 
 public class BrokenLine implements Lengthable, BrokenLineable {
-    public List <Point2D> points2D = new ArrayList<>();
+    public List <Point> points2D = new ArrayList<>();
 
-    public BrokenLine(List<Point2D> points2D){
+    public BrokenLine(List<Point> points2D){
         this.points2D = points2D;
     }
-    public BrokenLine(Point2D... points2D){
+    public BrokenLine(Point... points2D){
         this(Arrays.asList(points2D));
     }
 
-    public void addNewPoints(Point2D... dots) {
-        for (Point2D p : dots) {
+    public void addNewPoints(Point... dots) {
+        for (Point p : dots) {
             points2D.add(p);
         }
     }
@@ -30,7 +30,7 @@ public class BrokenLine implements Lengthable, BrokenLineable {
     public String toString (){
         int count = 0 ;
         String res = "Линия [";
-        for (Point2D x: points2D){
+        for (Point x: points2D){
             res = res + " " + x;
             count++;
             if (count < points2D.size()) res = res + ",";

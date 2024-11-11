@@ -1,35 +1,51 @@
-package ru.zubrilovskaya.student;
+package ru.zubrilovskaya.human.student;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+
 public class Student {
     private String name;
     private List <Integer> marks = new ArrayList<>();
-    public Checker rule;
+    private Checker rule;
+
     public Student(String name, Integer... marks){
-        this (name, Arrays.asList(marks));
+        this (name, new RuleAllowAll(), Arrays.asList(marks));
     }
     public Student(String name, List<Integer> marks){
-//        if (name == null || name.isBlank()) throw new IllegalArgumentException("Error");
-//        this.name = name;
-//        this.marks = marks;
-        setName(name);
-        setMark(marks);
+        this (name, new RuleAllowAll(), marks);
     }
-    public Student(String name){
+    public Student(String name, Checker rule, Integer... marks){this (name, rule, Arrays.asList(marks));}
+
+    public Student(String name, Checker rule, List<Integer> marks){
         setName(name);
+        setRule(rule);
+        addMark(marks);
     }
+
+    public void setRule(Checker rule){
+        if (rule == null) throw new IllegalArgumentException("rule can not be null");
+        this.rule = rule;
+    }
+    public Checker getRule(){
+        return rule;
+    }
+
     public void setName(String name) {
         if (name == null || name.isBlank()) throw new IllegalArgumentException("Error");
         this.name = name;
     }
-    public void setMark(List<Integer> marks) {
+    public void addMark(List<Integer> marks) {
         for (int x: marks){
-            if (!rule.check(x)) throw new IllegalArgumentException("Error");
+            if (!rule.check(x)) throw new IncorrectMarkException(x);
         }
         this.marks.addAll(marks);
     }
+    public void addMark(Integer... marks){
+        addMark(Arrays.asList(marks));
+    }
+
     public String getName(){
         return name;
     }

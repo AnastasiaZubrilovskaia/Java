@@ -1,4 +1,4 @@
-package ru.zubrilovskaya.meow;
+package ru.zubrilovskaya.cat;
 public class Cat implements Meowable {
     public String name;
     public Cat(String name){

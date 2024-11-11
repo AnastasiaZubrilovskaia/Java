@@ -3,8 +3,8 @@ import ru.zubrilovskaya.human.*;
 import ru.zubrilovskaya.geometry.*;
 import ru.zubrilovskaya.time.Time;
 import ru.zubrilovskaya.house.House;
-import ru.zubrilovskaya.student.*;
-import ru.zubrilovskaya.meow.Cat;
+import ru.zubrilovskaya.human.student.*;
+import ru.zubrilovskaya.cat.Cat;
 import ru.zubrilovskaya.numbers.Fraction;
 import ru.zubrilovskaya.weapons.Gun;
 
@@ -27,20 +27,20 @@ public class Main14 {
         System.out.println(time);
         //1.4.1
         System.out.println("1.4.1:");
-        Point2D dot1 = new Point2D(3,5);
+        Point dot1 = new Point(3,5);
         System.out.println("1: " + dot1);
-        Point2D dot2 = new Point2D(25,6);
+        Point dot2 = new Point(25,6);
         System.out.println("2: " + dot2);
-        Point2D dot3 = new Point2D(7,8);
+        Point dot3 = new Point(7,8);
         System.out.println("3: " + dot3);
         //1.4.2
         System.out.println("1.4.2:");
-        Point2D dot_begin = new Point2D(1,3);
-        Point2D dot_end = new Point2D(23,8);
+        Point dot_begin = new Point(1,3);
+        Point dot_end = new Point(23,8);
         Line line1 = new Line(dot_begin, dot_end);
         System.out.println("1: " + line1);
         Line line2 = new Line(5, 10, 25, 10);
-        Point2D dot_end_2 = new Point2D(25,10);
+        Point dot_end_2 = new Point(25,10);
         System.out.println("2: " + line2);
         Line line3 = new Line(dot_begin, dot_end_2);
         System.out.println("3: " + line3);
@@ -98,8 +98,8 @@ public class Main14 {
         cat.meow(3);
         //1.5.3
         System.out.println("1.5.3:");
-        Point2D p1 = new Point2D(1,1);
-        Point2D p2 = new Point2D(10,15);
+        Point p1 = new Point(1,1);
+        Point p2 = new Point(10,15);
         Line line = new Line(p1,p2);
         System.out.println(line.length());
         //1.5.4
@@ -137,21 +137,21 @@ public class Main14 {
         System.out.println(student4.isExcellentStudent());
         //1.5.7
         System.out.println("1.5.7:");
-        Point2D point2D1 = new Point2D(1,5);
-        Point2D point2D2 = new Point2D(2,8);
-        Point2D point2D3 = new Point2D(5,3);
-        BrokenLine brokenLine1 = new BrokenLine(point2D1, point2D2, point2D3);
+        Point point1 = new Point(1,5);
+        Point point2D2 = new Point(2,8);
+        Point point3 = new Point(5,3);
+        BrokenLine brokenLine1 = new BrokenLine(point1, point2D2, point3);
         System.out.println(brokenLine1.length());
-        brokenLine1.addNewPoints(new Point2D(5,15), new Point2D(8,10));
+        brokenLine1.addNewPoints(new Point(5,15), new Point(8,10));
         System.out.println(brokenLine1.length());
         //1.5.8
         System.out.println("1.5.8:");
-        Square square1= new Square(new Point2D(5,3), 23);
+        Square square1= new Square(new Point(5,3), 23);
         BrokenLine brokenLine2 = square1.getBroken();
         System.out.println(brokenLine2.length());
-        Point2D lastPoint2D = brokenLine2.points2D.getLast();
-        lastPoint2D.x = 15;
-        lastPoint2D.y = 25;
+        Point lastPoint = brokenLine2.points2D.getLast();
+        lastPoint.x = 15;
+        lastPoint.y = 25;
         System.out.println(brokenLine2.length());
 
     }

@@ -1,13 +1,14 @@
 package ru.zubrilovskaya.main;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import ru.zubrilovskaya.cities.*;
 import ru.zubrilovskaya.birds.*;
 import ru.zubrilovskaya.geometry.*;
-import ru.zubrilovskaya.student.*;
-import ru.zubrilovskaya.meow.*;
+import ru.zubrilovskaya.human.student.*;
+import ru.zubrilovskaya.cat.*;
 import ru.zubrilovskaya.numbers.Fraction;
 import ru.zubrilovskaya.weapons.*;
 
@@ -23,11 +24,11 @@ public class Main33 {
         Bird bird3 = new Parrot("Parrot", "Hello World");
         birdMarket(bird1, bird2, bird3);
         //3.3.3
-        Shape figure1 = new Square(new Point2D(34,5),4);
-        Shape figure2 = new Square(new Point2D(-34,15),8);
-        Shape figure3 = new Square(new Point2D(4,25),10);
-        Shape figure4 = new Circle(new Point2D(23,4),5);
-        Shape figure5 = new Circle(new Point2D(3,46),3);
+        Shape figure1 = new Square(new Point(34,5),4);
+        Shape figure2 = new Square(new Point(-34,15),8);
+        Shape figure3 = new Square(new Point(4,25),10);
+        Shape figure4 = new Circle(new Point(23,4),5);
+        Shape figure5 = new Circle(new Point(3,46),3);
         System.out.printf("%.3f%n",generalArea(figure1, figure2, figure3, figure4, figure5));
         //3.3.4
         Cat cat1 = new Cat("Cat1");
@@ -36,7 +37,7 @@ public class Main33 {
         meow(cat1, cat2, cat3);
         //3.3.5
         Line line = new Line(2,4,5,6);
-        BrokenLine brokenLine = new BrokenLine(new Point2D(2,5), new Point2D(5,5), new Point2D(10,10));
+        BrokenLine brokenLine = new BrokenLine(new Point(2,5), new Point(5,5), new Point(10,10));
         System.out.printf("%.3f%n", sumLength(brokenLine, line));
         //3.3.8
         Shooter shooter1 = new Shooter("Ivan");
@@ -67,17 +68,21 @@ public class Main33 {
         System.out.println(E);
         //
         Student st1 = new Student("Alex");
-        st1.rule = new Rule();
-        List<Integer> marks1 = new ArrayList<>(List.of(2,3,4));
-        st1.setMark(marks1);
-        Student st2 = new Student("Ivan");
-        st2.rule = new Rule1();
-        List<Integer> marks2 = new ArrayList<>(List.of(2,3,4));
-        st2.setMark(marks2);
-        Student st3 = new Student("Petr");
-        st3.rule = new RangeRule(2,5);
-        List<Integer> marks3 = new ArrayList<>(List.of(2,3,4));
-        st3.setMark(marks3);
+        List<Integer> marks1 = new ArrayList<>(Arrays.asList(2, 3, 4));
+        st1.addMark(marks1);
+        Student st2 = new Student("Petr");
+        List<Integer> marks2 = new ArrayList<>(Arrays.asList(2, 3, 4));
+        st2.addMark(marks2);
+        Student st3 = new Student("Nick");
+        Student st4 = new Student("Nick", 2,3,10);
+        System.out.println(st1);
+        System.out.println(st2);
+        System.out.println(st3);
+        System.out.println(st4);
+        Student st6 = new Student("Name", new RangeRule(1,4), 2,3,4);
+        System.out.println(st6);
+
+
     }
     //3.3.1
     public static double sum(Number... numbers){
@@ -117,7 +122,7 @@ public class Main33 {
     }
     //3.3.7
     public static BrokenLine newBroken(BrokenLineable... brokenLines){
-        List<Point2D> points = new ArrayList<>();
+        List<Point> points = new ArrayList<>();
         for (BrokenLineable brokenLine: brokenLines){
             if(brokenLine != null) points.addAll(brokenLine.getBroken().points2D);
         }

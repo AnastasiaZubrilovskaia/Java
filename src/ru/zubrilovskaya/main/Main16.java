@@ -2,11 +2,6 @@ package ru.zubrilovskaya.main;
 import ru.zubrilovskaya.cities.*;
 import ru.zubrilovskaya.human.*;
 import ru.zubrilovskaya.geometry.*;
-import ru.zubrilovskaya.time.Time;
-import ru.zubrilovskaya.house.House;
-import ru.zubrilovskaya.student.*;
-import ru.zubrilovskaya.meow.Cat;
-import ru.zubrilovskaya.numbers.Fraction;
 import ru.zubrilovskaya.weapons.Gun;
 
 public class Main16 {
@@ -50,12 +45,12 @@ public class Main16 {
         System.out.println(gun.getBullet());
         //1.6.6
         System.out.println("1.6.6:");
-        Point2D dot1 = new Point2D(23,45);
-        Point2D dot2 = new Point2D(11,5);
-        Point2D dot3 = new Point2D(111,85);
+        Point dot1 = new Point(23,45);
+        Point dot2 = new Point(11,5);
+        Point dot3 = new Point(111,85);
         Line line1 = new Line(dot1, dot2);
         Line line2 = new Line(dot1, dot2);
-        Point2D y =line1.getEnd();
+        Point y =line1.getEnd();
         System.out.println(dot2==y);
         System.out.println(line1.getEnd());
         line1.setEnd(dot3);

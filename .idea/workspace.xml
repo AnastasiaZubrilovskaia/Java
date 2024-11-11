@@ -4,8 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acc16951-a236-40bf-b353-79bec4bd0740" name="Changes" comment="Homework 05.11.24">
+    <list default="true" id="acc16951-a236-40bf-b353-79bec4bd0740" name="Changes" comment="Homework 05.11">
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/comparator/PointComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/student/IncorrectMarkException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/student/RuleAllowAll.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/BrokenLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/BrokenLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/ClosedLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/ClosedLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Line.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Point2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Point3D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Point3D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main14.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main16.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main16.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main33.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main33.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main41.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main41.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/student/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/student/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +65,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main32.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main33.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main3341.executor&quot;: &quot;Run&quot;,
@@ -115,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730740713959</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Homework 05.11">
+      <option name="closed" value="true" />
+      <created>1730753738385</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730753738385</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -124,6 +153,7 @@
     <MESSAGE value="Work 02.11" />
     <MESSAGE value="Changes" />
     <MESSAGE value="Homework 05.11.24" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework 05.11.24" />
+    <MESSAGE value="Homework 05.11" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework 05.11" />
   </component>
 </project>

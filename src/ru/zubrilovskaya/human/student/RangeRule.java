@@ -1,4 +1,4 @@
-package ru.zubrilovskaya.student;
+package ru.zubrilovskaya.human.student;
 public  class RangeRule implements Checker{
     int min;
     int max;

@@ -1,12 +1,12 @@
 package ru.zubrilovskaya.geometry;
 public class Square extends Shape implements BrokenLineable {
     private int side;
-    public Square(Point2D leftTop, int side){
+    public Square(Point leftTop, int side){
         super(leftTop);
         setSide(side);
     }
     public Square(int x, int y, int side){
-        this(new Point2D(x,y), side);
+        this(new Point(x,y), side);
     }
 
     public void setSide(int side){
@@ -22,9 +22,9 @@ public class Square extends Shape implements BrokenLineable {
     }
     @Override
     public BrokenLine getBroken(){
-        Point2D rightTop = new Point2D(leftTop.x + side, leftTop.y);
-        Point2D rightBottom = new Point2D(leftTop.x + side, leftTop.y - side);
-        Point2D leftBottom = new Point2D(leftTop.x, leftTop.y-side);
+        Point rightTop = new Point(leftTop.x + side, leftTop.y);
+        Point rightBottom = new Point(leftTop.x + side, leftTop.y - side);
+        Point leftBottom = new Point(leftTop.x, leftTop.y-side);
         return new ClosedLine(leftTop,rightTop, rightBottom, leftBottom);
     }
     public double area(){

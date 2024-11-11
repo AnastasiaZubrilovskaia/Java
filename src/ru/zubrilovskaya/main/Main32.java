@@ -1,9 +1,6 @@
 package ru.zubrilovskaya.main;
-import java.util.ArrayList;
-import java.util.List;
 import ru.zubrilovskaya.cities.*;
 import ru.zubrilovskaya.birds.*;
-import ru.zubrilovskaya.student.*;
 import ru.zubrilovskaya.weapons.*;
 
 public class Main32 {

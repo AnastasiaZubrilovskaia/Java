@@ -1,8 +1,8 @@
 package ru.zubrilovskaya.geometry;
 public class Triangle extends Shape implements BrokenLineable {
-    public Point2D point2;
-    public Point2D point3;
-    public Triangle(Point2D point1, Point2D point2, Point2D point3){
+    public Point point2;
+    public Point point3;
+    public Triangle(Point point1, Point point2, Point point3){
         super(point1);
         if (point3.x == point2.x && leftTop.x == point2.x ||
                 point3.y == point2.y && leftTop.y == point2.y) throw new IllegalArgumentException("not Triangle");
