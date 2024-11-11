@@ -41,7 +41,7 @@ public class Main {
         d.addWorker(w);
     }
 
-    public static void addMany(List<Student> studs, int x) throws IncorrectMarkException {
+    public static void addMany(List<Student> studs, int x) {
         for (Student s : studs) {
             try {
                 Student st = new Student(s.getName(), s.getRule(), s.getMarks());
@@ -54,8 +54,6 @@ public class Main {
             st.addMark(x);
         }
     }
-
-
 }
 
 
