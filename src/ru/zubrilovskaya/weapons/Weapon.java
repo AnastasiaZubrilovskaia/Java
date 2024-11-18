@@ -1,6 +1,6 @@
 package ru.zubrilovskaya.weapons;
 public abstract class Weapon{
-    private int ammo;
+    protected int ammo;
     public Weapon(int ammo){
         if (ammo <0) throw new RuntimeException();
         this.ammo = ammo;

@@ -17,6 +17,7 @@ public class Cat implements Meowable {
         }
         System.out.println(res); ;
     }
+
     public String toString(){
         return "кот: " + name;
     }

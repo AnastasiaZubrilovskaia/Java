@@ -1,6 +1,7 @@
 package ru.zubrilovskaya.cities;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class City{
     private String name;
@@ -41,6 +42,20 @@ public class City{
 
     public List<Way> getWays() {
         return new ArrayList<>(ways);
+    }
+
+    @Override
+    public final boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof City city)) return false;
+
+        return city.getWays().size() == this.getWays().size() &&
+                city.getWays().containsAll(this.getWays());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, ways);
     }
 
     public void removeWay(Way road){

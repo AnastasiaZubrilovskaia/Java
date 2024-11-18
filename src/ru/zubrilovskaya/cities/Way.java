@@ -1,4 +1,7 @@
 package ru.zubrilovskaya.cities;
+
+import java.util.Objects;
+
 public class Way {
     private City city;
     private int pay;
@@ -8,6 +11,19 @@ public class Way {
     }
     public City getCity(){
         return city;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Way way = (Way) o;
+        return pay == way.pay && city == way.city;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(city, pay);
     }
 
     public int getPay(){

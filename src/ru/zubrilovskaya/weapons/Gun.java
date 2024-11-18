@@ -10,26 +10,22 @@ public class Gun extends Weapon implements Weaponable {
         return maxBullet;
     }
     public int unload(){
-        int number = getBullet();
-        decreaseAmmo(number);
-        return number;
+        decreaseAmmo(ammo);
+        return ammo;
     }
     @Override
     public void reload(int number){
-        int bullet = getBullet();
         if (number < 0) throw new IllegalArgumentException("number of bullets must be positive");
-        else if (number + bullet > maxBullet){
-            System.out.println(number - (maxBullet - bullet));
-            super.reload(maxBullet - bullet);
-
+        else if (number + ammo > maxBullet){
+            System.out.println(number - (maxBullet - ammo));
+            super.reload(maxBullet - ammo);
         }
         else{
             super.reload(number);
         }
     }
-
     public boolean isLoaded (){
-        return getBullet() > 0;
+        return ammo > 0;
     }
     @Override
     public void  shoot(){
@@ -38,5 +34,4 @@ public class Gun extends Weapon implements Weaponable {
             System.out.println("Бах!");
         }else System.out.println("Клац!");
     }
-
 }

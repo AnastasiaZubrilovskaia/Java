@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 
-public class Student {
+public class Student implements Cloneable{
     private String name;
     private List <Integer> marks = new ArrayList<>();
     private Checker rule;
@@ -23,8 +23,13 @@ public class Student {
         setRule(rule);
         addMark(marks);
     }
+    public Student(Student st){
+        this.name = st.name;
+        this.rule = st.rule;
+        this.marks = new ArrayList<>(st.marks);
+    }
 
-    public void setRule(Checker rule){
+     void setRule(Checker rule){
         if (rule == null) throw new IllegalArgumentException("rule can not be null");
         this.rule = rule;
     }
@@ -36,12 +41,14 @@ public class Student {
         if (name == null || name.isBlank()) throw new IllegalArgumentException("Error");
         this.name = name;
     }
+
     public void addMark(List<Integer> marks) {
         for (int x: marks){
             if (!rule.check(x)) throw new IncorrectMarkException(x);
         }
         this.marks.addAll(marks);
     }
+
     public void addMark(Integer... marks){
         addMark(Arrays.asList(marks));
     }
@@ -60,9 +67,19 @@ public class Student {
         return (double) res /marks.size();
     }
 
+
     public boolean isExcellentStudent(){
         return averageValue() == 5;
     }
+
+//    @Override
+//    public Student clone() throws CloneNotSupportedException {
+//        Student st = (Student) super.clone();
+//        st.marks = new ArrayList<>(this.marks);
+//        st.rule = rule.clone();
+//        return st;
+//    }
+
     public String toString(){
         String res = "имя: " + name + " [";
         int count = 0 ;
@@ -73,6 +90,5 @@ public class Student {
             if (count < marks.size()) res = res + ",";
         }
         return res + "]";
-
     }
 }

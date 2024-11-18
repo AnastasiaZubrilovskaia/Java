@@ -1,5 +1,10 @@
 package ru.zubrilovskaya.numbers;
-public final class Fraction extends Number{
+
+import ru.zubrilovskaya.human.student.Student;
+
+import java.util.Objects;
+
+public final class Fraction extends Number implements Cloneable{
     final int numerator;
     final int denominator;
     public Fraction(int numerator, int denominator){
@@ -56,6 +61,28 @@ public final class Fraction extends Number{
     }
     public Fraction div (int number){
         return  div(new Fraction(number, 1));
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Fraction fraction = (Fraction) o;
+        return numerator == fraction.numerator && denominator == fraction.denominator;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(numerator, denominator);
+    }
+
+    @Override
+    public Fraction clone()  {
+        try{
+            return  (Fraction) super.clone();
+        }catch (CloneNotSupportedException e){
+            throw new RuntimeException(e);
+        }
     }
 
     @Override

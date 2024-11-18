@@ -12,7 +12,7 @@ public class Department {
         setWorkers(workers);
     }
     public Department(String name){
-        setName(name);
+        this(name, new ArrayList<>());
     }
 
     public String getName() {
@@ -26,8 +26,10 @@ public class Department {
         return boss;
     }
     public void setBoss(Worker worker){
-        if (!workers.contains(worker)) throw new IllegalArgumentException("Person isn't worker of Detachment");
-        this.boss = worker;
+        if (worker == null) boss = null;
+        if (boss == worker) return;
+        addWorker(worker);
+        boss = worker;
     }
 
     public void setName(String name) {
@@ -40,21 +42,12 @@ public class Department {
 
     public void removeWorker(Worker worker){
         if (worker == null) return;
-        if (!workers.contains(worker)) return;
-        if (boss == worker) boss = null;
         worker.setDepartment(null);
-        workers.remove(worker);
-
     }
+
     public void addWorker(Worker worker){
         if (worker == null) return;
-        if (workers.contains(worker) && worker.department == this) return;
-        if (worker.department != this) {
-            worker.setDepartment(this);
-        }
-        if (!workers.contains(worker)) {
-            workers.add(worker);
-        }
+        worker.setDepartment(this);
     }
 
 
