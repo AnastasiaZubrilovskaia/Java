@@ -1,11 +1,13 @@
 package ru.zubrilovskaya.human.student;
 
+import ru.zubrilovskaya.comparison.Comparable;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 
-public class Student implements Cloneable{
+public class Student implements  Comparable<Student> {
     private String name;
     private List <Integer> marks = new ArrayList<>();
     private Checker rule;
@@ -72,13 +74,6 @@ public class Student implements Cloneable{
         return averageValue() == 5;
     }
 
-//    @Override
-//    public Student clone() throws CloneNotSupportedException {
-//        Student st = (Student) super.clone();
-//        st.marks = new ArrayList<>(this.marks);
-//        st.rule = rule.clone();
-//        return st;
-//    }
 
     public String toString(){
         String res = "имя: " + name + " [";
@@ -90,5 +85,12 @@ public class Student implements Cloneable{
             if (count < marks.size()) res = res + ",";
         }
         return res + "]";
+    }
+
+    @Override
+    public int compareTo(Student st) {
+        if (this.averageValue() > st.averageValue()) return 1;
+        else if (this.averageValue() == st.averageValue()) return 0;
+        else return -1;
     }
 }

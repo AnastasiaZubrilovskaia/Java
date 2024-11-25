@@ -36,7 +36,7 @@ public class Main33 {
         Cat cat3 = new Cat("Cat3");
         meow(cat1, cat2, cat3);
         //3.3.5
-        Line line = new Line(2,4,5,6);
+        Line line = new Line(new Point(2,4),new Point(5,6));
         BrokenLine brokenLine = new BrokenLine(new Point(2,5), new Point(5,5), new Point(10,10));
         System.out.printf("%.3f%n", sumLength(brokenLine, line));
         //3.3.8
@@ -124,7 +124,7 @@ public class Main33 {
     public static BrokenLine newBroken(BrokenLineable... brokenLines){
         List<Point> points = new ArrayList<>();
         for (BrokenLineable brokenLine: brokenLines){
-            if(brokenLine != null) points.addAll(brokenLine.getBroken().points2D);
+            if(brokenLine != null) points.addAll(brokenLine.getBroken().points);
         }
         return new BrokenLine(points);
     }

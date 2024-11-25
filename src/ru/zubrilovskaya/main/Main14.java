@@ -39,7 +39,7 @@ public class Main14 {
         Point dot_end = new Point(23,8);
         Line line1 = new Line(dot_begin, dot_end);
         System.out.println("1: " + line1);
-        Line line2 = new Line(5, 10, 25, 10);
+        Line line2 = new Line(new Point(5,10), new Point(25,10));
         Point dot_end_2 = new Point(25,10);
         System.out.println("2: " + line2);
         Line line3 = new Line(dot_begin, dot_end_2);
@@ -149,7 +149,7 @@ public class Main14 {
         Square square1= new Square(new Point(5,3), 23);
         BrokenLine brokenLine2 = square1.getBroken();
         System.out.println(brokenLine2.length());
-        Point lastPoint = brokenLine2.points2D.getLast();
+        Point lastPoint = brokenLine2.points.getLast();
         lastPoint.x = 15;
         lastPoint.y = 25;
         System.out.println(brokenLine2.length());

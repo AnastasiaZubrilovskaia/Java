@@ -3,14 +3,14 @@ import java.util.Arrays;
 import java.util.List;
 
 public class ClosedLine extends BrokenLine{
-    public ClosedLine(Point... points2D){
-        this(Arrays.asList(points2D));
+    public ClosedLine(Point... points){
+        this(Arrays.asList(points));
     }
-    public ClosedLine(List<Point> points2D){
-        super(points2D);
+    public ClosedLine(List<Point> points){
+        super(points);
     }
     @Override
     public double length() {
-        return super.length() + new Line(points2D.getFirst(), points2D.getLast()).length();
+        return super.length() + new Line(points.getFirst(), points.getLast()).length();
     }
 }

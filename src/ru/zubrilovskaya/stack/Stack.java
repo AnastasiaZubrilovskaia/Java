@@ -1,25 +1,33 @@
 package ru.zubrilovskaya.stack;
-public class Stack {
-    public int[] arr = new int[100];
-    public int size = 0;
-    public Stack(int size){
-        this.arr = new int[size];
-    }
-    public Stack(){
 
+import java.util.ArrayList;
+import java.util.List;
+
+public class Stack <T>{
+    List<T> stack = new ArrayList<>();
+
+    public void push(T ob){
+           stack.addFirst(ob);
     }
-    public void push(int num){
-        arr[size++] = num;
+
+    public T pop(){
+        if (stack.isEmpty()) throw new IllegalArgumentException("stack is empty");
+        return stack.removeFirst();
     }
-    public int pop (){
-        return arr[--size];
+
+    public T peek(){
+        if (stack.isEmpty()) throw new IllegalArgumentException("stack is empty");
+        return stack.getFirst();
     }
+
     public String toString(){
         String str = "[ ";
-        if (size == 0) return "[ ]";
-        for (int i = size-1; i>=0; i--){
-            str += arr[i] + " ";
+        if (stack.isEmpty()) return "[ ]";
+        for (T ob: stack){
+            str += ob + " ";
         }
         return str + "]";
     }
+
+
 }

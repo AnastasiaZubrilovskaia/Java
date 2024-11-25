@@ -1,7 +1,7 @@
 package ru.zubrilovskaya.main;
 import ru.zubrilovskaya.human.student.Student;
 import ru.zubrilovskaya.geometry.*;
-import ru.zubrilovskaya.stack.Stack;
+import ru.zubrilovskaya.stack.StackTest;
 import ru.zubrilovskaya.human.*;
 import ru.zubrilovskaya.house.House;
 import ru.zubrilovskaya.time.Time;
@@ -9,11 +9,11 @@ import ru.zubrilovskaya.cities.*;
 
 public class Main11 {
     public static void main(String[] args) {
-        Stack stack1 = new Stack(10);
-//        stack1.push(12);
-//        stack1.push(11);
-//        System.out.println(stack1.toString());
-//        System.out.println(stack1.pop());
+        StackTest stackTest1 = new StackTest(10);
+        stackTest1.push(12);
+        stackTest1.push(11);
+        System.out.println(stackTest1.toString());
+        System.out.println(stackTest1.pop());
 //        Department department= new Department("VrLab");
 //        System.out.println(department);
 //        Worker worker = new Worker("Korolev");
