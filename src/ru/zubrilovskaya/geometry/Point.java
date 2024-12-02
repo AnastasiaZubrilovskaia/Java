@@ -24,6 +24,10 @@ public class Point  implements Comparable<Point>, Cloneable{
         return Objects.hash(x, y);
     }
 
+    public double distance(Point point){
+        return Math.sqrt(Math.pow(point.x-this.x, 2) + Math.pow(point.y-this.y, 2));
+    }
+
     @Override
     public Point clone() {
         try{

@@ -6,10 +6,15 @@ public class Line <T extends Point> implements Lengthable, BrokenLineable, Clone
     private T begin;
     private T end;
 
-//    public Line (int x1, int y1, int x2, int y2){
-//        this (new Point(x1, y1), new Point(x2, y2));
-//    }
+    public static Line<Point> of(int x1, int y1, int x2, int y2){
+        return new Line<> (new Point(x1, y1), new Point(x2, y2));
+    }
+    public static <V extends Point>Line<V> of(V begin, V end){
+        return new Line<> (begin,end);
+    }
+
     public Line (T begin, T end){
+        if(begin.getClass() != end.getClass()) throw new RuntimeException();
         setBegin(begin);
         setEnd(end);
     }
@@ -19,22 +24,22 @@ public class Line <T extends Point> implements Lengthable, BrokenLineable, Clone
     public T getEnd(){
         return  end;
     }
+    @SuppressWarnings("unchecked")
     public void setBegin(T begin){
+        if( end != null && begin.getClass() != end.getClass()) throw new RuntimeException();
         this.begin = (T) begin.clone();
     }
+    @SuppressWarnings("unchecked")
     public void setEnd(T end){
+        if(begin!=null && begin.getClass() != end.getClass()) throw new RuntimeException();
         this.end = (T) end.clone();
     }
+
     @Override
     public double length(){
-        int x = end.x - begin.x;
-        int y = end.y - begin.y;
-        if (begin instanceof Point3D && end instanceof Point3D){
-            int z = ((Point3D) end).z - ((Point3D) begin).z;
-            return Math.sqrt(x*x + y*y + z*z);
-        }
-        return  Math.sqrt(x*x + y*y);
+        return  begin.distance(end);
     }
+
 
     @Override
     public Line clone(){

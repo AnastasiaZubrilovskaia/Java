@@ -14,17 +14,17 @@ public class Main61 {
         box1.setObject(3);
         test1(box1);
         //6.1.2
-        Storage<Integer> storage1 = new Storage<>(null);
-        test2(storage1,0);
-
-        Storage<Integer> storage2 = new Storage<>(99);
-        test2(storage2, -1);
-
-        Storage<String> storage3 = new Storage<>(null);
-        test2(storage3, "default");
-
-        Storage<String> storage4 = new Storage<>("hello");
-        test2(storage4, "hello world");
+//        Storage<Integer> storage1 = new Storage<>(null);
+//        test2(storage1,0);
+//
+//        Storage<Integer> storage2 = new Storage<>(99);
+//        test2(storage2, -1);
+//
+//        Storage<String> storage3 = new Storage<>(null);
+//        test2(storage3, "default");
+//
+//        Storage<String> storage4 = new Storage<>("hello");
+//        test2(storage4, "hello world");
         //6.1.4
         Student student1 = new Student("Oleg", 4, 5,5);
         Student student2 = new Student("Ivan", 4, 5,5);

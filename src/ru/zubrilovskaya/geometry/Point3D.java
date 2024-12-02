@@ -19,6 +19,12 @@ public class Point3D extends Point{
     }
 
     @Override
+    public double distance(Point point) {
+        Point3D point3D = (Point3D) point;
+        return Math.sqrt(Math.pow(point3D.x-this.x, 2) + Math.pow(point3D.y-this.y, 2) + Math.pow(point3D.z-this.z, 2));
+    }
+
+    @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), z);
     }
