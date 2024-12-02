@@ -33,7 +33,8 @@ public class DataStream {
         return list;
     }
 
-    public static  <C extends Collection<T>, T>  C collect(List<T> values, CreateCollect<T,C> createFunction, CollectFunction<T> fun){
+    public static  <C extends Collection<T>, T>  C collect(List<T> values, CreateCollect<T,C> createFunction,
+                                                           CollectFunction<T> fun){
         C result = createFunction.create();
         for(T x: values){
             result.add(fun.apply(x));

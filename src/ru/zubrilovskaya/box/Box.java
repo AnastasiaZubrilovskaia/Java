@@ -8,7 +8,7 @@ public class Box <T>{
         this.ob = ob;
     }
 
-    public T getObject (){
+    public T getObject(){
         T ob2 = ob;
         ob = null;
         return ob2;

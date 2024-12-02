@@ -1,5 +1,5 @@
 package ru.zubrilovskaya.human;
-//import lombok.Buider;
+//import lombok.Builder;
 //@Builder
 
 public class Name {
@@ -7,19 +7,18 @@ public class Name {
     final  String personalName;
     private String middleName;
     public  Name (String surname, String personalName, String middleName){
-        if ((surname ==  null || surname.isBlank()) && (personalName ==  null || personalName.isBlank())
-                && (middleName ==  null || middleName.isBlank())){
-            throw new IllegalArgumentException("Error");
-        }
+        if (personalName ==  null || personalName.isBlank()) throw new IllegalArgumentException("Error");
         setSurname(surname);
         setMiddleName(middleName);
         this.personalName = personalName;
     }
 
     public void setSurname(String surname){
+        if (surname ==  null || surname.isBlank()) throw new IllegalArgumentException("Error");
         this.surname = surname;
     }
     public void setMiddleName(String middleName){
+        if  (middleName ==  null || middleName.isBlank())throw new IllegalArgumentException("Error");
         this.middleName = middleName;
     }
 
