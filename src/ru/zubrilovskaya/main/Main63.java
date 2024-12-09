@@ -1,6 +1,8 @@
 package ru.zubrilovskaya.main;
 import ru.zubrilovskaya.different.DataStream;
 import ru.zubrilovskaya.different.Function;
+import ru.zubrilovskaya.geometry.BrokenLine;
+import ru.zubrilovskaya.geometry.Point;
 import ru.zubrilovskaya.storage.Storage;
 
 import java.util.ArrayList;
@@ -9,23 +11,16 @@ import java.util.List;
 
 public class Main63 {
     public static void main(String[] args){
-        System.out.println(sum(List.of()).getOb(-1));
-        int x = DataStream.sum(List.of(1,2,3), (res, y)->res+y).orElse(-1);
-        int max = DataStream.sum(List.of(1,2,3), Math::max).orElse(-1);
-        System.out.println(x);
-        System.out.println(max);
 
-        List<Integer> list1 = new ArrayList<>(List.of(1,2,3,4, -6));
-        List<Integer> list2 = DataStream.filter(list1, a->a>0);
-        System.out.println(list2);
 
-        List<String> list3 = new ArrayList<>(List.of("aaa", "hhh", "abb"));
-        List<String> list4 = DataStream.filter(list3, a-> a.startsWith("a"));
-        System.out.println(list4);
-
-        List<Integer> list5 = DataStream.map(list3, a->a.length());
-        System.out.println(list5);
-
+        List<Point> initList = List.of(new Point(1,2),
+                new Point(-3,4),
+                new Point(5,6));
+        BrokenLine polyline = DataStream.of(initList)
+                .filter(p -> p.x>0 && p.y>0)
+                .map(p -> new Point(p.x+5, p.y))
+                .collect(BrokenLine::new, (poly,p) -> poly.points.add(p));
+        System.out.println(polyline);
     }
     public static Storage<Integer> sum(List<Integer> num){
         int res  = 0;

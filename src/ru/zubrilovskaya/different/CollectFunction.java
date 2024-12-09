@@ -1,5 +1,5 @@
 package ru.zubrilovskaya.different;
 
-public interface CollectFunction <T> {
-    T apply(T arg);
+public interface CollectFunction <P,T> {
+    void accept(P arg1, T arg2);
 }

@@ -142,7 +142,7 @@ public class Main14 {
         Point point3 = new Point(5,3);
         BrokenLine brokenLine1 = new BrokenLine(point1, point2D2, point3);
         System.out.println(brokenLine1.length());
-        brokenLine1.addNewPoints(new Point(5,15), new Point(8,10));
+//        brokenLine1.addNewPoints(new Point(5,15), new Point(8,10));
         System.out.println(brokenLine1.length());
         //1.5.8
         System.out.println("1.5.8:");

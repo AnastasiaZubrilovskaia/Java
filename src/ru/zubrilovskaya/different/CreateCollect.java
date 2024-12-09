@@ -1,5 +1,5 @@
 package ru.zubrilovskaya.different;
 
-public interface CreateCollect <T,C>{
-    C create ();
+public interface CreateCollect <P>{
+    P create();
 }
