@@ -1,7 +1,7 @@
 package ru.zubrilovskaya.main;
 
+import ru.zubrilovskaya.geometry.*;
 import ru.zubrilovskaya.test.A;
-import ru.zubrilovskaya.geometry.Point;
 
 public class Test {
     public static void main(String[] args){
@@ -24,5 +24,18 @@ public class Test {
         p1 = null;
         System.out.println(p);
         System.out.println(p1);
+        //
+        Point dot1 = new Point(12,56);
+        Point dot2 = new Point(2,6);
+        Point dot3 = new Point(-5,5);
+        Point dot4 = new Point(10,11);
+        BrokenLine brokenLine = new BrokenLine(dot1, dot2, dot3, dot4);
+        ClosedLine closedLine = new ClosedLine(dot1, dot2, dot3, dot4);
+        GetPoints getPoints1 = new GetPoints(brokenLine);
+        getPoints1.setCurrentIndex(1);
+        while (getPoints1.hasNext()) System.out.println("broken line: " + getPoints1.next());
+
+        GetPoints getPoints2 = new GetPoints(closedLine);
+        for (int i = 0; i<10; i++)System.out.println("closed line: " + getPoints2.next());
     }
 }

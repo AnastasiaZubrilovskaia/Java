@@ -8,13 +8,13 @@ public class KarateBoy {
     }
 
     public void kick(){
-        System.out.println(name + "kyaaaaa");
+        System.out.println(name + "  kyaaaaa");
     }
     public void punch(){
-        System.out.println(name + "uuuuuuuuu");
+        System.out.println(name + "  uuuuuuuuu");
     }
 
     public void jump(){
-        System.out.println(name + "AAAAA");
+        System.out.println(name + "  AAAAA");
     }
 }

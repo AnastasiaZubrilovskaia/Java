@@ -2,15 +2,14 @@ package ru.zubrilovskaya.human.student;
 
 import ru.zubrilovskaya.comparison.Comparable;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 
 public class Student implements  Comparable<Student> {
     private String name;
     private List <Integer> marks = new ArrayList<>();
-    private Checker rule;
+    Checker rule;
+    private Deque<UndoOperation> operations = new ArrayDeque<>();
 
     public Student(String name, Integer... marks){
         this (name, new RuleAllowAll(), Arrays.asList(marks));
@@ -40,6 +39,8 @@ public class Student implements  Comparable<Student> {
     }
 
     public void setName(String name) {
+        String temp = this.name;
+        operations.push(()->this.name = temp);
         if (name == null || name.isBlank()) throw new IllegalArgumentException("Error");
         this.name = name;
     }
@@ -48,6 +49,9 @@ public class Student implements  Comparable<Student> {
         for (int x: marks){
             if (!rule.check(x)) throw new IncorrectMarkException(x);
         }
+        List<Integer> temp = new ArrayList<>(this.marks);
+        operations.push(()->this.marks = temp);
+
         this.marks.addAll(marks);
     }
 
@@ -93,4 +97,39 @@ public class Student implements  Comparable<Student> {
         else if (this.averageValue() == st.averageValue()) return 0;
         else return -1;
     }
+
+    public void removeMark(int index){
+        if(index < 0 || index >= marks.size()) throw new ArrayIndexOutOfBoundsException();
+        int mark = marks.get(index);
+        operations.push(()->this.marks.add(index, mark));
+        marks.remove(index);
+    }
+
+    public Save save(){
+        SaveStudent student = new SaveStudent(this.getName(), new ArrayList<>(this.getMarks()));
+        return student;
+    }
+
+    public void undo(){
+        operations.pop().make();
+    }
+
+    class SaveStudent implements Save{
+        private String name;
+        private List<Integer> marks;
+
+        public SaveStudent(String name, List<Integer> grades) {
+            this.name = name;
+            this.marks = grades;
+        }
+
+        @Override
+        public void loadSave(Student student) {
+            Student.this.marks = new ArrayList<>(this.marks);
+            Student.this.name = this.name;
+        }
+    }
 }
+
+
+

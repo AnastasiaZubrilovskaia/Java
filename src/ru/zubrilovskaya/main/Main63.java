@@ -7,11 +7,11 @@ import ru.zubrilovskaya.storage.Storage;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 
 public class Main63 {
     public static void main(String[] args){
-
 
         List<Point> initList = List.of(new Point(1,2),
                 new Point(-3,4),
