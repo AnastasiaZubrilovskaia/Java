@@ -1,7 +1,12 @@
 package ru.zubrilovskaya.main;
 
+import ru.zubrilovskaya.different.stock.Bot;
+import ru.zubrilovskaya.different.stock.Printer;
+import ru.zubrilovskaya.different.stock.Stock;
 import ru.zubrilovskaya.geometry.*;
 import ru.zubrilovskaya.test.A;
+
+import java.util.List;
 
 public class Test {
     public static void main(String[] args){
@@ -37,5 +42,15 @@ public class Test {
 
         GetPoints getPoints2 = new GetPoints(closedLine);
         for (int i = 0; i<10; i++)System.out.println("closed line: " + getPoints2.next());
+
+        //
+        Stock stock1 = new Stock("ORCL", 75);
+        Stock stock2 = new Stock("TSLA", 696);
+        Printer printer = new Printer("Printer", List.of(stock1, stock2));
+        Bot bot = new Bot("Bot", stock1);
+        stock2.setCost(700);
+        stock1.setCost(71);
+        stock1.setCost(69);
+
     }
 }

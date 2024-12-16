@@ -4,26 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acc16951-a236-40bf-b353-79bec4bd0740" name="Changes" comment="Homework 10.12">
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/DeferredCalculations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/light/GreenLight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/light/RedLight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/light/Signal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/light/TrafficLight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/light/Yellow1Light.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/light/Yellow2Light.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/GetPoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/human/student/Save.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/human/student/UndoOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main64.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main73.java" afterDir="false" />
+    <list default="true" id="acc16951-a236-40bf-b353-79bec4bd0740" name="Changes" comment="Homework 17.12">
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/stock/Bot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/stock/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/stock/Stock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/stock/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/DataStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/DataStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/BrokenLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/BrokenLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/human/karate/KarateBoy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/human/karate/KarateBoy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/human/student/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/human/student/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main63.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main63.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/GetPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/GetPoints.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,33 +50,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.Main11.executor": "Run",
-    "Application.Main14.executor": "Run",
-    "Application.Main32.executor": "Run",
-    "Application.Main33.executor": "Run",
-    "Application.Main3341.executor": "Run",
-    "Application.Main41.executor": "Run",
-    "Application.Main42.executor": "Run",
-    "Application.Main61.executor": "Run",
-    "Application.Main62.executor": "Run",
-    "Application.Main63.executor": "Run",
-    "Application.Main64.executor": "Run",
-    "Application.Main73.executor": "Run",
-    "Application.MainTest.executor": "Run",
-    "Application.Test.executor": "Run",
-    "Application.Unnamed.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main11.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main14.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main32.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main33.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main3341.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main41.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main42.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main61.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main62.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main63.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main64.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main73.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ru.zubrilovskaya.different" />
@@ -218,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733759550311</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Homework 17.12">
+      <option name="closed" value="true" />
+      <created>1734293043958</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1734293043958</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -235,7 +230,8 @@
     <MESSAGE value="Homework 03.12" />
     <MESSAGE value="Homework(2) 03.12" />
     <MESSAGE value="Homework 10.12" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework 10.12" />
+    <MESSAGE value="Homework 17.12" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework 17.12" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

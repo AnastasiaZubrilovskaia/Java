@@ -27,9 +27,8 @@ public class GetPoints implements Iterator<Point> {
         if(line.getClass() == BrokenLine.class){
             return line.points.get(currentIndex++);
         }
-        Point point = line.points.get(currentIndex);
-        currentIndex = (currentIndex + 1) % line.points.size();
-        return point;
+        if (currentIndex == line.points.size()) currentIndex=0;
+        return line.points.get(currentIndex++);
     }
 
 }
