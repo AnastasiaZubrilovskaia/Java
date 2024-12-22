@@ -1,10 +1,18 @@
 package ru.zubrilovskaya.different.light;
 
 public class GreenLight implements Signal {
-    String color = "green";
+    static final Signal GREEN = new GreenLight();
+
+    public GreenLight() {
+    }
+
     @Override
     public void next(TrafficLight trafficLight) {
-        System.out.println(color);
-        trafficLight.setColor(new Yellow2Light());
+//        trafficLight.setColor(Yellow2Light.YELLOW2);
+    }
+
+    @Override
+    public String toString() {
+        return "green";
     }
 }

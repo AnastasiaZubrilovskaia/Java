@@ -1,17 +1,14 @@
 package ru.zubrilovskaya.different.light;
 
 public class TrafficLight {
-    Signal color;
+    Signal color = Light.GREEN;
 
-    public TrafficLight( ) {
-        this.color = new GreenLight();
-    }
-
-    void setColor(Signal color){
+    void setColor(Light color){
         this.color = color;
     }
 
     public void next(){
         color.next(this);
+        System.out.println(color);
     }
 }

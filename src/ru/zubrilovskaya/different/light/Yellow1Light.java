@@ -1,10 +1,18 @@
 package ru.zubrilovskaya.different.light;
 
 public class Yellow1Light implements Signal{
-    String color = "yellow";
+    static final Signal YELLOW1 = new Yellow1Light();
+
+    public Yellow1Light() {
+    }
+
     @Override
     public void next(TrafficLight trafficLight) {
-        System.out.println(color);
-        trafficLight.setColor(new GreenLight());
+//        trafficLight.setColor(GreenLight.GREEN);
+    }
+
+    @Override
+    public String toString() {
+        return "yellow";
     }
 }

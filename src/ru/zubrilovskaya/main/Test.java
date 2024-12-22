@@ -5,6 +5,7 @@ import ru.zubrilovskaya.different.stock.Printer;
 import ru.zubrilovskaya.different.stock.Stock;
 import ru.zubrilovskaya.geometry.*;
 import ru.zubrilovskaya.test.A;
+import ru.zubrilovskaya.test.Operation;
 
 import java.util.List;
 
@@ -51,6 +52,9 @@ public class Test {
         stock2.setCost(700);
         stock1.setCost(71);
         stock1.setCost(69);
+        //
+        Operation op = Operation.SUM;
+        System.out.println(op.action(23,56));
 
     }
 }

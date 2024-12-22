@@ -49,8 +49,13 @@ public class Student implements  Comparable<Student> {
         for (int x: marks){
             if (!rule.check(x)) throw new IncorrectMarkException(x);
         }
-        List<Integer> temp = new ArrayList<>(this.marks);
-        operations.push(()->this.marks = temp);
+
+//        List<Integer> temp = new ArrayList<>(this.marks);
+//        operations.push(()->this.marks = temp);
+//        int size = marks.size();
+//        operations.push(()->this.marks.add(index, mark));
+//        marks.remove(index);
+       // переделать должна удаляться оценка (запоминаем количество добавленных, потом удаляем последние n) removeLast(n)
 
         this.marks.addAll(marks);
     }
