@@ -2,7 +2,7 @@ package ru.zubrilovskaya.geometry;
 
 import java.util.Objects;
 
-public class Line <T extends Point> implements Lengthable, BrokenLineable, Cloneable {
+public class Line <T extends Point> implements Lengthable, BrokenLineable, Cloneable, Combable {
     private T begin;
     private T end;
 
@@ -78,5 +78,11 @@ public class Line <T extends Point> implements Lengthable, BrokenLineable, Clone
         Point start = begin.hashCode() < end.hashCode() ? begin : end;
         Point finish = begin.hashCode() < end.hashCode() ? end : begin;
         return Objects.hash(start, finish);
+    }
+
+    @Override
+    public void shift(int n, String... strings) {
+        begin.shift(n,strings);
+        end.shift(n, strings);
     }
 }

@@ -1,4 +1,5 @@
-package ru.zubrilovskaya.test;
+package ru.zubrilovskaya.test.bank;
+
 import java.util.ArrayList;
 import java.util.List;
 

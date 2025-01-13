@@ -19,6 +19,16 @@ public class Point3D extends Point{
     }
 
     @Override
+    public void shift(int n, String... strings) {
+        for(String str: strings){
+            if (str == "X" || str == "x") x+=n;
+            else if (str == "Y" || str == "y") y+=n;
+            else if (str == "Z" || str == "z") z+=n;
+            else throw new IllegalArgumentException("Такой координаты нет");
+        }
+    }
+
+    @Override
     public double distance(Point point) {
         Point3D point3D = (Point3D) point;
         return Math.sqrt(Math.pow(point3D.x-this.x, 2) + Math.pow(point3D.y-this.y, 2) + Math.pow(point3D.z-this.z, 2));

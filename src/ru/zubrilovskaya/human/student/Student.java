@@ -4,6 +4,7 @@ import ru.zubrilovskaya.comparison.Comparable;
 
 import java.util.*;
 
+//используется паттерн "Хранитель" для сохрнения текущего состояния
 
 public class Student implements  Comparable<Student> {
     private String name;
@@ -49,15 +50,11 @@ public class Student implements  Comparable<Student> {
         for (int x: marks){
             if (!rule.check(x)) throw new IncorrectMarkException(x);
         }
-
-//        List<Integer> temp = new ArrayList<>(this.marks);
-//        operations.push(()->this.marks = temp);
-//        int size = marks.size();
-//        operations.push(()->this.marks.add(index, mark));
-//        marks.remove(index);
-       // переделать должна удаляться оценка (запоминаем количество добавленных, потом удаляем последние n) removeLast(n)
-
         this.marks.addAll(marks);
+        int size = marks.size();
+        operations.push(()-> {
+            for(int i = 0; i < size; i++) this.marks.removeLast();
+        });
     }
 
     public void addMark(Integer... marks){
@@ -101,6 +98,21 @@ public class Student implements  Comparable<Student> {
         if (this.averageValue() > st.averageValue()) return 1;
         else if (this.averageValue() == st.averageValue()) return 0;
         else return -1;
+    }
+
+    public Iterator<Integer> iterator(){
+        return new Iterator<>() {
+            int currentMark = 0;
+            @Override
+            public boolean hasNext() {
+                return currentMark < marks.size();
+            }
+
+            @Override
+            public Integer next() {
+                return marks.get(currentMark++);
+            }
+        };
     }
 
     public void removeMark(int index){

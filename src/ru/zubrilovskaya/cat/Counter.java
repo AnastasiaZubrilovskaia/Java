@@ -1,5 +1,6 @@
 package ru.zubrilovskaya.cat;
 
+//паттерн Заместитель (Proxy)
 public class Counter implements Meowable{
     public int count;
     Meowable cat;

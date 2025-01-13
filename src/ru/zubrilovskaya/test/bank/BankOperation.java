@@ -1,4 +1,4 @@
-package ru.zubrilovskaya.test;
+package ru.zubrilovskaya.test.bank;
 public class BankOperation {
     private String name;
     private int sum;

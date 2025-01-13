@@ -58,10 +58,6 @@ public class Main42 {
         dd.addWorker(a2);
         System.out.println(dd);
 
-
-
-
-
     }
 
     public static void meow(Meowable meowable){

@@ -1,4 +1,4 @@
-package ru.zubrilovskaya.test;
+package ru.zubrilovskaya.test.bank;
 
 public enum Operation {
     SUM{

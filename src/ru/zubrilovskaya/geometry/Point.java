@@ -2,12 +2,19 @@ package ru.zubrilovskaya.geometry;
 
 import java.util.Objects;
 
-public class Point  implements Comparable<Point>, Cloneable{
+public class Point  implements Comparable<Point>, Cloneable, Combable{
     public int x;
     public int y;
     public Point(int x, int y){
         this.x = x;
         this.y = y;
+    }
+    public void shift( int n, String... strings){
+        for(String str: strings){
+            if (str == "X" || str == "x") x+=n;
+            else if (str == "Y" || str == "y") y+=n;
+            else throw new IllegalArgumentException("Такой координаты нет");
+        }
     }
 
 

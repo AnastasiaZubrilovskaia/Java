@@ -1,6 +1,6 @@
 package ru.zubrilovskaya.main;
 import ru.zubrilovskaya.comparator.StringComparator;
-import ru.zubrilovskaya.test.*;
+import ru.zubrilovskaya.test.bank.BankAccount;
 import ru.zubrilovskaya.geometry.*;
 
 import java.util.ArrayList;

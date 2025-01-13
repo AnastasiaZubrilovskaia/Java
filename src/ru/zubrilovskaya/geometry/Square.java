@@ -5,6 +5,8 @@ public class Square extends Shape implements BrokenLineable {
         super(leftTop);
         setSide(side);
     }
+
+
     public Square(int x, int y, int side){
         this(new Point(x,y), side);
     }

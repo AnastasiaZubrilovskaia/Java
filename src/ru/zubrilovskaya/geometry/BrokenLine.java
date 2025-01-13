@@ -1,8 +1,15 @@
 package ru.zubrilovskaya.geometry;
 import java.util.*;
 
+//использвуется паттерн "Итератор"
+
 public class BrokenLine implements Lengthable, BrokenLineable {
     public List<Point> points = new ArrayList<>();
+    int current = 0;
+
+    public void setCurrent(int current) {
+        if (current>=0 && current< points.size()) this.current = current;
+    }
 
     public BrokenLine(List<Point> points) {
         this.points = points;
@@ -52,5 +59,21 @@ public class BrokenLine implements Lengthable, BrokenLineable {
     @Override
     public BrokenLine getBroken() {
         return new BrokenLine(points);
+    }
+
+    public Iterator<Point> iterator(){
+        return new Iterator<Point>() {
+            int index = current;
+            @Override
+            public boolean hasNext() {
+                return index < points.size();
+            }
+
+            @Override
+            public Point next() {
+                if(hasNext()) return points.get(index++);
+                throw new IllegalArgumentException("Not points");
+            }
+        };
     }
 }

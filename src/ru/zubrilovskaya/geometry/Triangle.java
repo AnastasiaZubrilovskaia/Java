@@ -9,6 +9,14 @@ public class Triangle extends Shape implements BrokenLineable {
         this.point2 = point2;
         this.point3 = point3;
     }
+
+    @Override
+    public void shift(int n, String... strings) {
+        super.shift(n, strings);
+        point2.shift(n, strings);
+        point3.shift(n, strings);
+    }
+
     @Override
     public BrokenLine getBroken(){
         return new BrokenLine(leftTop,point2, point3);
@@ -20,5 +28,4 @@ public class Triangle extends Shape implements BrokenLineable {
         double p = (double) (a + b + c) /2;
         return Math.sqrt(p*(p-a)*(p-b)*(p-c));
     }
-
 }

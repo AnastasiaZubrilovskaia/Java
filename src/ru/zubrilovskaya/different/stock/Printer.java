@@ -23,7 +23,6 @@ public class Printer implements User{
         setStocks(Arrays.asList(stocks));
     }
 
-
     @Override
     public void getMessage(Stock stock) {
         System.out.println(stock);

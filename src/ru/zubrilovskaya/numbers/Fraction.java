@@ -1,6 +1,5 @@
 package ru.zubrilovskaya.numbers;
 
-import ru.zubrilovskaya.human.student.Student;
 
 import java.util.Objects;
 

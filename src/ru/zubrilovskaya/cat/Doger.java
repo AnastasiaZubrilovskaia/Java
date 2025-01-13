@@ -1,5 +1,7 @@
 package ru.zubrilovskaya.cat;
 
+//паттерн Адаптер (Adapter)
+
 public class Doger implements Meowable{
     Dog dog;
 
