@@ -1,0 +1,3 @@
+ru.zubrilovskaya.geometry.Point{x=12, y=4}
+ru.zubrilovskaya.geometry.Point{x=45, y=8}
+ru.zubrilovskaya.geometry.Point{x=0, y=0}
