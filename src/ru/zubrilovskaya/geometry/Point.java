@@ -9,7 +9,11 @@ public class Point  implements Comparable<Point>, Cloneable, Combable{
         this.x = x;
         this.y = y;
     }
-    public void shift( int n, String... strings){
+    //для задания 8.1.5
+    public Point() {
+    }
+
+    public void shift(int n, String... strings){
         for(String str: strings){
             if (str == "X" || str == "x") x+=n;
             else if (str == "Y" || str == "y") y+=n;

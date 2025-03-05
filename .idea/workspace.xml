@@ -4,63 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acc16951-a236-40bf-b353-79bec4bd0740" name="Changes" comment="Homework 22.12">
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/database/Connection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/database/DataBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/CoverForString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/converter/Converter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/converter/Function.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/converter/Openable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/converter/Openning.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/converter/Transformable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/converter/Trasformer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/converter/Writable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/converter/Writer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/statement/Accounting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/statement/Personnel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/statement/Security.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/statement/Statement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/temperature/Temperature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/temperature/Temperature2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/watchman/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/watchman/Pupil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/watchman/Teacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/watchman/Watchman.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Combable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/ComboShapes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/PointGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main71.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main72.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/numbers/FractionGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/storage/TmpObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/test/compartment/Compartment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/test/compartment/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/test/macro/Function.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/test/macro/Macro.java" afterDir="false" />
+    <list default="true" id="acc16951-a236-40bf-b353-79bec4bd0740" name="Changes" comment="14.01.2025">
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/annotations/Cache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/annotations/Default.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/annotations/Invoke.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/annotations/ToString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/annotations/Two.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/annotations/Validate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/annotations/Variant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/reflection/ObjectsReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/reflection/ObjectsWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/reflection/StorageClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/PointComparatorX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/human/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/human/TestHuman.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/human/ValidateException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main81.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/NewMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/cat/Alertor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/cat/Alertor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/cat/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/cat/Counter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/cat/Doger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/cat/Doger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/stock/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/stock/Printer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/stock/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/stock/Stock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/DataStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/DataStream.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/BrokenLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/BrokenLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/ClosedLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/ClosedLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Line.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Point3D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Point3D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/human/student/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/human/student/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main42.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main42.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main73.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main73.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/numbers/Fraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/numbers/Fraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/test/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/test/bank/BankAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/test/BankOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/test/bank/BankOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/test/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/test/bank/Operation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,9 +34,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="Exception" />
+        <option value="AnnotationType" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -100,35 +66,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main11.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main14.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main32.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main33.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main3341.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main41.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main42.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main61.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main62.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main63.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main64.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main71.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main72.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main73.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MainTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.Main11.executor": "Run",
+    "Application.Main14.executor": "Run",
+    "Application.Main32.executor": "Run",
+    "Application.Main33.executor": "Run",
+    "Application.Main3341.executor": "Run",
+    "Application.Main41.executor": "Run",
+    "Application.Main42.executor": "Run",
+    "Application.Main61.executor": "Run",
+    "Application.Main62.executor": "Run",
+    "Application.Main63.executor": "Run",
+    "Application.Main64.executor": "Run",
+    "Application.Main71.executor": "Run",
+    "Application.Main72.executor": "Run",
+    "Application.Main73.executor": "Run",
+    "Application.Main81.executor": "Run",
+    "Application.MainTest.executor": "Run",
+    "Application.NewMain.executor": "Run",
+    "Application.Test.executor": "Run",
+    "Application.Unnamed.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Java_w/Java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ru.zubrilovskaya.different" />
@@ -281,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734879493135</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="14.01.2025">
+      <option name="closed" value="true" />
+      <created>1736797919881</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1736797919881</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -301,7 +278,8 @@
     <MESSAGE value="Homework 17.12" />
     <MESSAGE value="Homework(2) 17.12" />
     <MESSAGE value="Homework 22.12" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework 22.12" />
+    <MESSAGE value="14.01.2025" />
+    <option name="LAST_COMMIT_MESSAGE" value="14.01.2025" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -3,7 +3,7 @@ import java.util.*;
 
 //использвуется паттерн "Итератор"
 
-public class BrokenLine implements Lengthable, BrokenLineable {
+public class BrokenLine implements Lengthable, BrokenLineable  {
     public List<Point> points = new ArrayList<>();
     int current = 0;
 
