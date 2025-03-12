@@ -3,20 +3,18 @@ package ru.zubrilovskaya.main;
 import ru.zubrilovskaya.annotations.Cache;
 import ru.zubrilovskaya.annotations.Invoke;
 import ru.zubrilovskaya.annotations.Two;
+import ru.zubrilovskaya.different.reflection.Entity;
 import ru.zubrilovskaya.different.reflection.ObjectsReader;
 import ru.zubrilovskaya.different.reflection.ObjectsWriter;
+import ru.zubrilovskaya.different.reflection.TestExecutor;
 import ru.zubrilovskaya.geometry.ClosedLine;
 import ru.zubrilovskaya.geometry.Line;
 import ru.zubrilovskaya.geometry.Point;
 import ru.zubrilovskaya.geometry.Point3D;
 import ru.zubrilovskaya.human.Human;
 import ru.zubrilovskaya.human.Name;
-import ru.zubrilovskaya.human.TestHuman;
-import ru.zubrilovskaya.human.ValidateException;
 import ru.zubrilovskaya.weapons.Pistol;
 
-
-import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -48,8 +46,7 @@ public class Main81 {
 
         //8.1.4
         Human human = new Human(new Name("Ivanov", "Ivan", "Ivanich"), 190);
-        TestHuman testHuman = new TestHuman();
-        validate(human, testHuman.getClass());
+        TestExecutor.validation(human);
 
         //8.1.5
         List<Point> points = new ArrayList<>(List.of(new Point(12,4), new Point(45,8),
@@ -97,75 +94,14 @@ public class Main81 {
             throw new RuntimeException(e);
         }
     }
-
-    //8.1.4
-    public static void validate (Object ob, Class<?> clazz) {
-        Method[] methods = clazz.getDeclaredMethods();
-        Arrays.stream(clazz.getDeclaredMethods())
-                .filter(m->m.getParameterCount()==1)
-                .filter(m->m.getParameterTypes()[0].isAssignableFrom(ob.getClass()))
-                .peek(m-> m.setAccessible(true))
-                .toList();
-
-        for(Method m: methods){
-            try{
-                Constructor<?> constructor = clazz.getDeclaredConstructor();
-                constructor.setAccessible(true);
-                m.setAccessible(true);
-                m.invoke(constructor.newInstance(), ob);
-            } catch (InvocationTargetException e) {
-                Throwable t1 = e.getCause();
-                if(t1 instanceof ValidateException w){
-                    throw w;
-                }
-            } catch (IllegalAccessException |
-                     InstantiationException | NoSuchMethodException e) {
-                throw new RuntimeException(e);
-            }
-        }
-    }
-
-    //8.1.6
-    public static <T> T cache (T ob){
-//        Object storage = new StorageClass<>(ob).check();
-        return ob;
-    }
 }
 
 
 
 
 //8.1.3
-abstract class Entity {
-    public static List<Field> getAllFields(Class<?> clazz) {
-        List<Field> fields = new ArrayList<>(Arrays.asList(clazz.getDeclaredFields()));
-        while (clazz.getSuperclass() != null) {
-            clazz = clazz.getSuperclass();
-            fields.addAll(Arrays.asList(clazz.getDeclaredFields()));
-        }
-        return fields;
-    }
-
-    private String getFieldValue(Field field) {
-        try {
-            field.setAccessible(true);
-            return field.getName() + "=" + field.get(this) + " ";
-        } catch (IllegalAccessException e) {
-            throw new RuntimeException(e);
-        }
-    }
-    @Override
-    public String toString() {
-        return getClass().getSimpleName() + "{ "
-                + getAllFields(getClass()).stream()
-                .map(this::getFieldValue)
-                .collect(Collectors.joining())
-                + "}";
-    }
-}
-
 @Cache({"1", "2"})
-class A extends Entity{
+class A extends Entity {
     String s="hello";
     int x =3;
 }

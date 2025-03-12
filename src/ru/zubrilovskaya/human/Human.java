@@ -1,4 +1,10 @@
 package ru.zubrilovskaya.human;
+
+import ru.zubrilovskaya.annotations.AValidate;
+import ru.zubrilovskaya.annotations.Validate;
+
+//@Validate(TestHuman.class)
+@AValidate
 public class Human {
     private int height;
     private Name name;

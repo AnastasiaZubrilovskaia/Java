@@ -4,27 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acc16951-a236-40bf-b353-79bec4bd0740" name="Changes" comment="14.01.2025">
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/annotations/Cache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/annotations/Default.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/annotations/Invoke.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/annotations/ToString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/annotations/Two.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/annotations/Validate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/annotations/Variant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/reflection/ObjectsReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/reflection/ObjectsWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/reflection/StorageClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/PointComparatorX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/human/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/human/TestHuman.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/human/ValidateException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main81.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/NewMain.java" afterDir="false" />
+    <list default="true" id="acc16951-a236-40bf-b353-79bec4bd0740" name="Changes" comment="05.03.25(1)">
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/annotations/AValidate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/annotations/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/reflection/DefaultValues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/reflection/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/reflection/ResetClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/reflection/TestExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/reflection/cach/CacheProxyCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/reflection/cach/ProxyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/reflection/cach/Testable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main83.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/DataStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/DataStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/BrokenLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/BrokenLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/geometry/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/annotations/Default.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/annotations/Default.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/different/reflection/StorageClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/human/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/human/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/human/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/human/TestHuman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/human/TestHuman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main81.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/zubrilovskaya/main/Main81.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,11 +31,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Class" />
         <option value="Exception" />
-        <option value="AnnotationType" />
         <option value="Enum" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -57,6 +54,9 @@
     &quot;accountId&quot;: &quot;fcddced4-00c7-4dee-af97-20920c50d58c&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -84,6 +84,7 @@
     "Application.Main72.executor": "Run",
     "Application.Main73.executor": "Run",
     "Application.Main81.executor": "Run",
+    "Application.Main83.executor": "Run",
     "Application.MainTest.executor": "Run",
     "Application.NewMain.executor": "Run",
     "Application.Test.executor": "Run",
@@ -92,10 +93,10 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Java_w/Java",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "configurable.group.tools"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -258,8 +259,35 @@
       <option name="project" value="LOCAL" />
       <updated>1736797919881</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="05.03.25">
+      <option name="closed" value="true" />
+      <created>1741204797092</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1741204797092</updated>
+    </task>
+    <task id="LOCAL-00019" summary="05.03.25(1)">
+      <option name="closed" value="true" />
+      <created>1741204880905</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1741204880905</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
@@ -279,7 +307,9 @@
     <MESSAGE value="Homework(2) 17.12" />
     <MESSAGE value="Homework 22.12" />
     <MESSAGE value="14.01.2025" />
-    <option name="LAST_COMMIT_MESSAGE" value="14.01.2025" />
+    <MESSAGE value="05.03.25" />
+    <MESSAGE value="05.03.25(1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="05.03.25(1)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
