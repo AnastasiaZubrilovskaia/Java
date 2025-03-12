@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acc16951-a236-40bf-b353-79bec4bd0740" name="Changes" comment="12.03.25(1) with pom.xml" />
+    <list default="true" id="acc16951-a236-40bf-b353-79bec4bd0740" name="Changes" comment="12.03.25(1) with pom.xml">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/junitTests.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/different/reflection/forTests/AReset.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/different/reflection/forTests/BReset.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/different/reflection/forTests/CReset.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/test/test1/ResetClassTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/different/reflection/ResetClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/different/reflection/ResetClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/zubrilovskaya/different/reflection/ResetClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/zubrilovskaya/different/reflection/ResetClass.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,8 +26,8 @@
         <option value="Exception" />
         <option value="Enum" />
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -48,40 +58,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main11.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main14.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main32.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main33.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main3341.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main41.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main42.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main61.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main62.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main63.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main64.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main71.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main72.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main73.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main81.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main83.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MainTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NewMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Java_w/Java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.Main11.executor": "Run",
+    "Application.Main14.executor": "Run",
+    "Application.Main32.executor": "Run",
+    "Application.Main33.executor": "Run",
+    "Application.Main3341.executor": "Run",
+    "Application.Main41.executor": "Run",
+    "Application.Main42.executor": "Run",
+    "Application.Main61.executor": "Run",
+    "Application.Main62.executor": "Run",
+    "Application.Main63.executor": "Run",
+    "Application.Main64.executor": "Run",
+    "Application.Main71.executor": "Run",
+    "Application.Main72.executor": "Run",
+    "Application.Main73.executor": "Run",
+    "Application.Main81.executor": "Run",
+    "Application.Main83.executor": "Run",
+    "Application.MainTest.executor": "Run",
+    "Application.NewMain.executor": "Run",
+    "Application.Test.executor": "Run",
+    "Application.Unnamed.executor": "Run",
+    "JUnit.ResetClassTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Java_w/Java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "configurable.group.tools"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ru.zubrilovskaya.different" />

@@ -6,7 +6,7 @@ import java.lang.reflect.Field;
 import java.util.*;
 
 public class ResetClass {
-    static DefaultValues defaultValues = new DefaultValues.BuilderDefault()
+    public static DefaultValues defaultValues = new DefaultValues.BuilderDefault()
             .setInt(42)
             .setString("hello")
             .build();
