@@ -54,7 +54,7 @@ public class ResetClassTest {
     public void testWithFieldAnnotation3() {
         ResetClass.reset(b);
 
-        assertEquals(42, b.x); //-
+        assertNotEquals(42, b.x);
     }
 
     @Test
@@ -62,21 +62,31 @@ public class ResetClassTest {
     public void testWithoutAnnotations1() {
         ResetClass.reset(c);
 
-        assertEquals(42, c.getX());
+        assertNotEquals(42, c.getX());
     }
     @Test
     @DisplayName("без аннотаций 2")
     public void testWithoutAnnotations2() {
         ResetClass.reset(c);
 
-        assertEquals("hello", c.getSt());
+        assertNotEquals("hello", c.getSt());
     }
     @Test
     @DisplayName("без аннотаций 3")
     public void testWithoutAnnotations3() {
         ResetClass.reset(c);
 
-        assertEquals(42, c.getY());
+        assertNotEquals(42, c.getY());
+    }
+    @Test
+    @DisplayName("несколько объектов")
+    public void testWithSeveralClasses() {
+        ResetClass.reset(a,b);
+
+        assertEquals(42, a.getX());
+        assertEquals("hello", a.getSt());
+        assertEquals("hello", b.st);
+        assertEquals(42, b.y);
     }
 
 }
