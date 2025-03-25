@@ -1,4 +1,4 @@
-package ru.zubrilovskaya.different.reflection.forTests;
+package test1;
 
 public class CReset {
     private int x =100;

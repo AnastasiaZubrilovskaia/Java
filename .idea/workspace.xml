@@ -4,14 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acc16951-a236-40bf-b353-79bec4bd0740" name="Changes" comment="12.03.25(1) with pom.xml">
-      <change afterPath="$PROJECT_DIR$/src/main/test/test1/CollectTest.java" afterDir="false" />
+    <list default="true" id="acc16951-a236-40bf-b353-79bec4bd0740" name="Changes" comment="19.03.25">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/main/MainSpring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/spring/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/spring/GreenLight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/spring/RedLight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/spring/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/spring/Signal2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/spring/StudentBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/spring/TrafficLight2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/spring/Yellow1Light.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/spring/Yellow2Light.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/test/test2/AEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/test/test2/BEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/test/test2/EntityTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/different/reflection/cach/CacheProxyCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/different/reflection/cach/CacheProxyCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/different/reflection/cach/ProxyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/different/reflection/cach/ProxyHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/different/light/GreenLight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/different/light/RedLight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/different/light/Yellow1Light.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/different/light/Yellow2Light.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/different/reflection/forTests/AReset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/test1/AReset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/different/reflection/forTests/BReset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/test1/BReset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/zubrilovskaya/different/reflection/forTests/CReset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/test1/CReset.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/test/test1/ResetClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/test1/ResetClassTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/zubrilovskaya/different/reflection/cach/CacheProxyCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/zubrilovskaya/different/reflection/cach/CacheProxyCreator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/zubrilovskaya/different/reflection/cach/ProxyHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/zubrilovskaya/different/reflection/cach/ProxyHandler.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +41,8 @@
         <option value="Exception" />
         <option value="Enum" />
         <option value="AnnotationType" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -76,10 +92,13 @@
     &quot;Application.Main73.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main81.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main83.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainSpring.executor&quot;: &quot;Run&quot;,
     &quot;Application.MainTest.executor&quot;: &quot;Run&quot;,
     &quot;Application.NewMain.executor&quot;: &quot;Run&quot;,
     &quot;Application.Test.executor&quot;: &quot;Run&quot;,
     &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EntityTest.classNameTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EntityTest.fieldAndValuesTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.ResetClassTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.ResetClassTest.testWithClassAnnotation.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.ResetClassTest.testWithFieldAnnotation1.executor&quot;: &quot;Run&quot;,
@@ -92,9 +111,9 @@
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Java_w/Java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -102,11 +121,50 @@
       <recent name="ru.zubrilovskaya.different" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ResetClassTest.testWithSeveralClasses">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.zubrilovskaya.main.Main41" />
-      <module name="Java" />
-      <option name="PROGRAM_PARAMETERS" value="3 3" />
+  <component name="RunManager">
+    <configuration name="EntityTest.classNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junitTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test2" />
+      <option name="MAIN_CLASS_NAME" value="test2.EntityTest" />
+      <option name="METHOD_NAME" value="classNameTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntityTest.fieldAndValuesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junitTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test2" />
+      <option name="MAIN_CLASS_NAME" value="test2.EntityTest" />
+      <option name="METHOD_NAME" value="fieldAndValuesTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResetClassTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junitTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test1" />
+      <option name="MAIN_CLASS_NAME" value="test1.ResetClassTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -122,22 +180,6 @@
       <option name="PACKAGE_NAME" value="test1" />
       <option name="MAIN_CLASS_NAME" value="test1.ResetClassTest" />
       <option name="METHOD_NAME" value="testWithClassAnnotation" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ResetClassTest.testWithFieldAnnotation1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junitTests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test1" />
-      <option name="MAIN_CLASS_NAME" value="test1.ResetClassTest" />
-      <option name="METHOD_NAME" value="testWithFieldAnnotation1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,45 +201,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResetClassTest.testWithFieldAnnotation3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junitTests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test1" />
-      <option name="MAIN_CLASS_NAME" value="test1.ResetClassTest" />
-      <option name="METHOD_NAME" value="testWithFieldAnnotation3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ResetClassTest.testWithSeveralClasses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junitTests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test1" />
-      <option name="MAIN_CLASS_NAME" value="test1.ResetClassTest" />
-      <option name="METHOD_NAME" value="testWithSeveralClasses" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ResetClassTest.testWithSeveralClasses" />
-        <item itemvalue="JUnit.ResetClassTest.testWithFieldAnnotation3" />
-        <item itemvalue="JUnit.ResetClassTest.testWithFieldAnnotation2" />
-        <item itemvalue="JUnit.ResetClassTest.testWithFieldAnnotation1" />
+        <item itemvalue="JUnit.EntityTest.classNameTest" />
+        <item itemvalue="JUnit.ResetClassTest" />
         <item itemvalue="JUnit.ResetClassTest.testWithClassAnnotation" />
+        <item itemvalue="JUnit.ResetClassTest.testWithFieldAnnotation2" />
+        <item itemvalue="JUnit.EntityTest.fieldAndValuesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -386,7 +396,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741815114394</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="19.03.25">
+      <option name="closed" value="true" />
+      <created>1742411708897</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1742411708897</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -422,7 +440,8 @@
     <MESSAGE value="05.03.25(1)" />
     <MESSAGE value="12.03.25" />
     <MESSAGE value="12.03.25(1) with pom.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="12.03.25(1) with pom.xml" />
+    <MESSAGE value="19.03.25" />
+    <option name="LAST_COMMIT_MESSAGE" value="19.03.25" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

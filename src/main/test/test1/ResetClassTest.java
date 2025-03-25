@@ -5,9 +5,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import ru.zubrilovskaya.different.reflection.DefaultValues;
 import ru.zubrilovskaya.different.reflection.ResetClass;
-import ru.zubrilovskaya.different.reflection.forTests.AReset;
-import ru.zubrilovskaya.different.reflection.forTests.BReset;
-import ru.zubrilovskaya.different.reflection.forTests.CReset;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -35,7 +32,7 @@ public class ResetClassTest {
     }
 
     @Test
-    @DisplayName("аннотация @Default на уровне поля 1")
+    @DisplayName("аннотация @Default на уровне поля  String st")
     public void testWithFieldAnnotation1() {
         ResetClass.reset(b);
 
@@ -43,14 +40,14 @@ public class ResetClassTest {
     }
 
     @Test
-    @DisplayName("аннотация @Default на уровне поля 2")
+    @DisplayName("аннотация @Default на уровне поля int y")
     public void testWithFieldAnnotation2() {
         ResetClass.reset(b);
 
         assertEquals(42, b.y);
     }
     @Test
-    @DisplayName("аннотация @Default на уровне поля 3")
+    @DisplayName("отсутствие аннотации @Default на уровне поля int x")
     public void testWithFieldAnnotation3() {
         ResetClass.reset(b);
 
@@ -58,21 +55,21 @@ public class ResetClassTest {
     }
 
     @Test
-    @DisplayName("без аннотаций 1")
+    @DisplayName("без аннотаций на уровне приватного поля int x")
     public void testWithoutAnnotations1() {
         ResetClass.reset(c);
 
         assertNotEquals(42, c.getX());
     }
     @Test
-    @DisplayName("без аннотаций 2")
+    @DisplayName("без аннотаций на уровне приватного поля String st")
     public void testWithoutAnnotations2() {
         ResetClass.reset(c);
 
         assertNotEquals("hello", c.getSt());
     }
     @Test
-    @DisplayName("без аннотаций 3")
+    @DisplayName("без аннотаций на уровне приватного поля int y")
     public void testWithoutAnnotations3() {
         ResetClass.reset(c);
 
@@ -87,6 +84,7 @@ public class ResetClassTest {
         assertEquals("hello", a.getSt());
         assertEquals("hello", b.st);
         assertEquals(42, b.y);
+        assertNotEquals(42, b.x);
     }
 
 }
