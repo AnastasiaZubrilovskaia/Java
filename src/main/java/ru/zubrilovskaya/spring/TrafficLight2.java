@@ -10,8 +10,8 @@ public class TrafficLight2 {
     private Signal2 color;
 
     @Autowired
-    public TrafficLight2(@Qualifier("greenLight") Signal2 initialColor) {
-        this.color = initialColor;
+    public TrafficLight2(@Qualifier("greenLight") Signal2 color) {
+        this.color = color;
     }
 
     public void setColor(Signal2 color) {

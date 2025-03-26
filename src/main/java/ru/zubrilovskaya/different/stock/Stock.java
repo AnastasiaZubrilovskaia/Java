@@ -1,6 +1,7 @@
 package ru.zubrilovskaya.different.stock;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 //задание решается с использованием паттерна "Наблюдатель"
@@ -36,5 +37,9 @@ public class Stock {
         if (users!=null){
             for (User us: users) us.getMessage(this);
         }
+    }
+
+    public void setUsers(User ...users) {
+        this.users.addAll(List.of(users));
     }
 }

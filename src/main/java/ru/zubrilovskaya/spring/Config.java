@@ -1,5 +1,4 @@
 package ru.zubrilovskaya.spring;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Bean;
@@ -12,7 +11,7 @@ import java.util.List;
 import java.util.function.Predicate;
 
 @Configuration
-@ComponentScan(basePackages = "ru.zubrilovskaya.spring")
+@ComponentScan
 public class Config {
 
     @Bean
@@ -34,7 +33,6 @@ public class Config {
 
     @Bean
     public Predicate<Integer> range(){
-
         return new Predicate<Integer>() {
             @Override
             public boolean test(Integer integer) {
@@ -53,6 +51,7 @@ public class Config {
         return 0;
     }
 
+    //9.2.2
     @Bean
     public Response response1(){
         return new Response("Очень хорошо", 4);
@@ -69,13 +68,14 @@ public class Config {
         return new Response("Сложно сказать", random());
     }
 
+    //9.2.3
     @Bean
     @Scope("prototype")
     public Response response(List<Response> responseList){
         return responseList.stream()
                 .max(Response::compareTo).get();
     }
-
+    //9.2.4
     @Bean
     public Checker forCheck(Predicate<Integer> p){
         return (int mark) -> p.test(mark);
@@ -90,6 +90,5 @@ public class Config {
     public Student student2(Checker checker){
         return new Student("Ivan", checker);
     }
-
 
 }
