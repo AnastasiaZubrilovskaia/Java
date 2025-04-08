@@ -1,19 +1,16 @@
 package ru.zubrilovskaya.spring;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.*;
 import ru.zubrilovskaya.human.student.Checker;
 import ru.zubrilovskaya.human.student.Student;
 
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.function.Predicate;
 
 @Configuration
 @ComponentScan
+@ComponentScan(basePackages = "ru.zubrilovskaya.postprocesses")
 public class Config {
-
+    List<Integer> nums = new ArrayList<>();
     @Bean
     public String hello(){
         return "Hello world!";
@@ -22,11 +19,16 @@ public class Config {
     @Bean
     @Scope("prototype")
     public int random(){
-        int random = (int) (Math.random()*((max() - min()) + 1)) + min();
-        return random;
+        if(nums.isEmpty()){
+            for(int i=0; i<100; i++) nums.add(i);
+        }
+        Random random = new Random();
+        int index = random.nextInt(1, 100);
+        return  nums.remove(index);
     }
 
     @Bean
+    @Lazy
     public Date date(){
         return new Date();
     }
@@ -72,8 +74,11 @@ public class Config {
     @Bean
     @Scope("prototype")
     public Response response(List<Response> responseList){
+//        return responseList.stream()
+//                .max(Response::compareTo).get();
         return responseList.stream()
-                .max(Response::compareTo).get();
+                .max(Comparator.comparingInt(x->x.mark))
+                .orElse(null);
     }
     //9.2.4
     @Bean

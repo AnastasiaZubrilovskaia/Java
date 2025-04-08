@@ -2,15 +2,24 @@ package ru.zubrilovskaya.main;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import ru.zubrilovskaya.annotations.Invoke;
 import ru.zubrilovskaya.different.stock.Stock;
+import ru.zubrilovskaya.postprocesses.NameCheck;
 import ru.zubrilovskaya.spring.*;
 import ru.zubrilovskaya.human.student.Student;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
 import java.util.function.Predicate;
 
 public class MainSpring {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         ApplicationContext ctx = new AnnotationConfigApplicationContext(Config.class);
 
@@ -47,7 +56,7 @@ public class MainSpring {
 //        student1.addMark(6);
         //9.2.5
         StudentBuilder studentBuilder = ctx.getBean("studentBuilder", StudentBuilder.class);
-        Student student2 = studentBuilder.build("Ivan", 5,5,3);
+        Student student2 = studentBuilder.build("Ivan", 5, 5, 3);
         System.out.println(student2);
         //9.2.7
         TrafficLight2 trafficLight = ctx.getBean("trafficLight2", TrafficLight2.class);
@@ -61,6 +70,11 @@ public class MainSpring {
         subscriber1.setStock(stock1);
         stock1.setCost(700);
 
+        //9.3.1
+
+        NameCheck nameCheck = ctx.getBean(NameCheck.class);
+        nameCheck.setNum(11);
+        System.out.println(nameCheck);
 
     }
 }

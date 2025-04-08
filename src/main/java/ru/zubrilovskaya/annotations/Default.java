@@ -9,6 +9,7 @@ import java.lang.annotation.Target;
 @Target({ElementType.TYPE, ElementType.FIELD})
 
 public @interface Default {
+    String value() default " ";
 }
 
 //public @interface Default {
